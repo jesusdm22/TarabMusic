@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Chat</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content fullscreen>
+  <ion-list>
+    <ion-list-header>
+      Reciente
+    </ion-list-header>
+
+    <ion-item *ngFor="let chat of recent">
+      <ion-avatar slot="start">
+        <img src="https://www.shareicon.net/data/2016/09/01/822739_user_512x512.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>Nombre Apellido</h2>
+        <p>Escucha, ¿nos vemos esta tarde en Sev...</p>
+      </ion-label>
+      <ion-badge color="primary">2</ion-badge>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      En línea
+    </ion-list-header>
+
+    <ion-item *ngFor="let chat of online">
+      <ion-avatar slot="start">
+        <img src="https://www.shareicon.net/data/2016/09/01/822739_user_512x512.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>Poe</h2>
+        <h2>Nombre Apellido</h2>
+        <p>Escucha, ¿nos vemos esta tarde en Sev...</p>
+      </ion-label>
+    </ion-item>
+
+    
+  </ion-list>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "TarabMusic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

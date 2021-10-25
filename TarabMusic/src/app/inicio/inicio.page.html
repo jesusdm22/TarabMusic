@@ -1,0 +1,41 @@
+<ion-content class="auth-form">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-align-self-center">
+        <img src="../../assets/logos/logo_png.png" class="logo">
+
+        <form>
+          <ion-item lines="full">
+            <ion-label position="floating">E-Mail</ion-label>
+            <ion-input type="text" required></ion-input>
+          </ion-item>
+      
+          <ion-item lines="full">
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" required></ion-input>
+          </ion-item>
+      
+          <ion-row>
+            <ion-col>
+              <ion-button expand="block" color="dark">Iniciar sesión</ion-button><br>
+              <a [routerLink]="['/recuperar-password']" class="forgot">¿Has olvidado la contraseña?</a>
+            </ion-col>
+          </ion-row>
+        </form>
+        
+        <span class="divider line one-line">o</span>
+
+        <span class="already">Aún no tienes una cuenta?</span>
+        <ion-button [routerLink]="['/registro']" expand="block" color="primary">Registrate aquí</ion-button>
+        <ion-button [routerLink]="['/tabs/musica']" expand="block" color="danger" (click)="showToast()">APP</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+<ion-footer  class="ion-no-border">
+  <ion-toolbar>
+    <ion-title style="text-align: center; font-size: 15px;">Tarab Music &copy; {{year}}</ion-title>
+  </ion-toolbar>
+</ion-footer>

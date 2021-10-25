@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registrarse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating"><ion-icon name="person-circle"></ion-icon> Nombre completo</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating"><ion-icon name="earth"></ion-icon> Nombre de usuario</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating"><ion-icon name="mail"></ion-icon> E-Mail</ion-label>
+      <ion-input type="email" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      
+      <ion-label position="floating"><ion-icon name="call"></ion-icon> Móvil</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating"><ion-icon name="lock-closed"></ion-icon> Contraseña</ion-label>
+      <ion-input type="password" required></ion-input>
+      <ion-icon slot="end" name="eye"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating"><ion-icon name="lock-closed"></ion-icon> Repite la contraseña</ion-label>
+      <ion-input type="password" required></ion-input>
+      <ion-icon slot="end" name="eye"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox color="primary"></ion-checkbox>&nbsp;&nbsp;
+      <a position="floating" [routerLink]="['/legal']">Acepto los terminos de licencia.</a>
+    </ion-item>
+      
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="dark" expand="block">Registrarme</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

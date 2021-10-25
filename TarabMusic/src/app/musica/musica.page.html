@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nueva música</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!--PUBLICACIONES-->
+  <ion-grid class="posts">
+    <ion-row>
+      <ion-col size="4" class="media" *ngFor="let box of boxes">
+        <img src="https://www.pngkit.com/png/full/43-438895_play-button-overlay-png-white-video-play-button.png" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
